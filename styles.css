@@ -1,0 +1,55 @@
+html { color-scheme: dark; }
+::selection { background: rgba(220, 38, 38, 0.3); }
+
+.squared-xl { border-radius: 0; }
+.squared-md { border-radius: 0; }
+
+/* Kill number-input spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+/* Range sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    #dc2626 0%,
+    #dc2626 var(--pct, 50%),
+    #27272a var(--pct, 50%),
+    #27272a 100%
+  );
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #09090b;
+  border: 2px solid #dc2626;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #09090b;
+  border: 2px solid #dc2626;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-track { background: transparent; }
+
+.tnum { font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
