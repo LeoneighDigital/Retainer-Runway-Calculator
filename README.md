@@ -2,7 +2,7 @@
 
 A zero-dependency financial telemetry dashboard built for independent software consultants and sovereign operators transitioning from hourly services to asynchronous retainers.
 
-Live Deployment: https://leoneighdigital.github.io/Retainer-Runway-Calender/
+Live Deployment: https://leoneighdigital.github.io/Retainer-Runway-Calculator/
 
 ---
 
@@ -20,6 +20,6 @@ Live Deployment: https://leoneighdigital.github.io/Retainer-Runway-Calender/
 Clone and serve directly from any static file server:
 
 ```bash
-git clone [https://github.com/LeoneighDigital/retainer-runway.git](https://github.com/LeoneighDigital/retainer-runway.git)
+git clone https://github.com/LeoneighDigital/Retainer-Runway-Calculator.git
 cd retainer-runway
 # Open index.html in any modern browser
